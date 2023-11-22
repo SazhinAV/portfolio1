@@ -1,0 +1,207 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Comic Neue', cursive;
+}
+
+html {
+   height: 100%;
+}
+
+body {
+   height: 100%;
+   padding: 15px;
+   position: relative;
+   background: url('../img/slide1.jpg') no-repeat center;
+}
+
+header {
+   z-index: 2;
+   width: 100%;
+}
+
+header div {
+   border: 1px solid lightgrey;
+   border-radius: 3px;
+   padding: 6px;
+   background-color: white;
+}
+
+.logo {
+   display: inline;
+   margin-right: 12px;
+}
+
+header div ul {
+   display: inline;
+}
+
+header div ul li:hover {
+   font-weight: bold;
+}
+
+header div ul li {
+   display: inline;
+   list-style: none;
+   padding: 0 6px;
+}
+
+header div ul li a {
+   text-decoration: none;
+   color: black;
+}
+
+content {
+   position: absolute;
+   overflow-x: hidden;
+   overflow-y: auto;
+   top: 60px;
+   left: 15px;
+   right: 15px;
+   bottom: 15px;
+}
+
+content .content-block {
+   width: 100%;
+   min-height: 100%;
+   position: relative;
+   padding-bottom: 170px;
+}
+
+content .content-block footer {
+   position: absolute;
+   left: 0;
+   right: 0;
+   bottom: 0;
+}
+
+.board {
+   display: block;
+   background-color: transparent;
+   position: relative;
+   z-index: 1;
+   color: black;
+   padding: 6px;
+   border-radius: 6px;
+}
+
+.board::before {
+   content: '';
+   display: block;
+   position: absolute;
+   inset: 0;
+   background-color: white;
+   opacity: .6;
+   z-index: -1;
+   border-radius: 6px;
+}
+
+.board-media {
+   display: block;
+   margin-top: 6px;
+   margin-bottom: 6px;
+}
+
+.board-media .board-title {
+   display: inline;
+}
+
+.board-media .board-block {
+   display: block;
+}
+
+.board-media .board-block .board-image {
+   display: block;
+}
+
+.board-media .board-block .board-image img {
+   max-width: 100%;
+}
+
+.board-media .board-block .board-content {
+   display: block;
+}
+
+.w-100 {
+   width: 100%;
+}
+
+.w-50 {
+   width: 50%;
+}
+
+.w-25 {
+   width: 25%;
+}
+
+.double-border-x {
+   border-left: 1px solid lightgrey;
+   border-right: 1px solid lightgrey;
+}
+
+.left-border-x {
+   border-left: 1px solid lightgrey;
+}
+
+.right-border-x {
+   border-right: 1px solid lightgrey;
+}
+
+select {
+   border: 1px solid lightgrey;
+   border-radius: 6px;
+   min-width: 100px;
+   min-height: 25px;
+}
+
+button {
+   border: 1px solid grey;
+   border-radius: 6px;
+   padding: 6px 12px;
+   background-color: lightgrey;
+   cursor: pointer;
+}
+
+button:hover {
+   background-color: grey;
+   color: white;
+}
+
+/* footer */
+
+.footer {
+   display: block;
+   width: 100%;
+}
+
+.footer-block-left {
+   display: inline-block;
+   width: 30%;
+   vertical-align: top;
+}
+
+.footer-block-right {
+   display: inline-block;
+   width: 69%;
+}
+
+.footer-block-right div {
+   margin-left: auto;
+}
+
+.footer-block-right-section-1, .footer-block-right-section-2 {
+   display: block;
+   text-align: right;
+}
+
+.footer .footer-block-right div .footer-block-right-section-1 ul li {
+   text-decoration: none;
+   list-style: none;
+}
+
+input {
+   border: 1px solid lightgrey;
+   border-radius: 6px;
+   padding: 8px 12px;
+}
